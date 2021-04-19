@@ -1,0 +1,90 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: darkorange;
+    font-family: Srinakharinwirot;
+    overflow: hidden;
+}
+.tableBorder {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 2px ;
+}
+
+.pageBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1150px;
+    height: 650px;
+    padding: 40px ;
+    box-sizing: border-box;
+    background: #ffcb32;
+}
+.pageBox h1 {
+    font-size: 60px;
+    color: white;
+    border: #353535;
+}
+
+
+.buttonBack {
+    display: inline-block;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #ff7006 ;
+    background-color: #ffffff;
+    color: #ff7006;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonBack span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonBack span:after {
+    content: '↩';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.buttonBack:hover span {
+    padding-left: 25px;
+}
+
+.buttonBack:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+
+.pageH1 {
+    float: left;
+}
+.pageH {
+    float: right;
+}
+
+.pageDataTB{
+    width: 1070px;
+    height: 370px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
