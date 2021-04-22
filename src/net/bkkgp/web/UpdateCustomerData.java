@@ -37,7 +37,7 @@ public class UpdateCustomerData extends HttpServlet {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             String dbURL = "jdbc:mysql://167.99.76.137:3306/BKK GROUP";
             String dbUser = "bkkgroup";
-            String dbPass = "212224236248";
+            String dbPass = "xxxxxxxxxxx";
             Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
             PreparedStatement ps = con.prepareStatement("UPDATE customer SET Cu_Name=?,Cu_Surname=?,Cu_Gender=?,Cu_nationality=?,Cu_Address=?,Cu_PostId=?,Cu_tel=?,Cu_email=? WHERE Customer_ID=?");
